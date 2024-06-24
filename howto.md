@@ -41,13 +41,14 @@ git clone git@github.com:matplo/collentropy.git
 
 ## generate
 
-## this is for some inelastic events
-```
-./collentropy/gen/pythia_parts2root.py --nev 1000 --py-ecm 7000. --py-inel --output pythia_7TeV_inel.root
-```
-
-## this is for some non-single diffractive events
+## this is for some (10k) inelastic events
 
 ```
-./collentropy/gen/pythia_parts2root.py --nev 1000 --py-ecm 7000. --py-nsd --output pythia_7TeV_nsd.root
+./collentropy/gen/pythia_parts2root.py --nev 10000 --py-ecm 7000. --py-inel --output pythia_7TeV_inel.root
+```
+
+## this is for non-single diffractive events
+
+```
+./collentropy/gen/pythia_parts2root.py --nev 10000 --py-ecm 7000. --py-nsd --output pythia_7TeV_nsd.root
 ```
